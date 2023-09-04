@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // eg.24/10 r=4  66/10 r=6
+        var a=prompt("enter the 1st no");
+        var b=prompt("enter the 2st no");
+        var c=prompt("enter the 3st no");
+
+        var res1=a%10;
+        console.log(res1);
+        var res2=b%10;
+        console.log(res2);
+        var res3=c%10;
+        console.log(res3);
+
+        if(res1 === res2 && res1 ===res3){
+            console.log(`${a} ${b} ${a} are having same last digit`);
+        }
+        else{
+            console.log(`${a} ${b} ${a} are not having same last digit`);
+        }
+    </script>
+    
+</body>
+</html>

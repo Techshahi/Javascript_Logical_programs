@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //  it is integer sequence where 1st two terms are  0 and 1 after the  the next term is defined as sum of previus
+    //eg.0,1,1,2,3,5,8,...
+    var a=0, b=1;
+    console.log(a);
+    console.log(b);
+    for(var i=0;i<=7;i++){
+        var temp=a+b;//temp=0+1=1 , temp=1+1=2 , 1+2=3
+        console.log(temp);
+        a=b;// a=1 ,a=1 ,a=2
+        b=temp;// b=1 ,b=2 ,b=3
+    }
+
+
+</script>
+    
+</body>
+</html>

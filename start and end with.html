@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <script>
+     var string=prompt("enter the string");
+     console.log(string);
+     var teststart=string.startsWith('d');
+     var testend=string.endsWith('p');
+      
+     if(teststart==true && testend ==true){
+        console.log(`${string} start with d and end with p`);
+     }
+     else if(teststart == true && testend == false){
+        console.log(`${string} start with d `);
+     }
+     else if(teststart == false && testend ==true){
+        console.log(`${string} end with p `);
+     }
+     else{
+        console.log(`${string} neither start with d nor end with p`);
+     }
+   </script>
+    
+</body>
+</html>

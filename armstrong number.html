@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //armstrong no. eg.153 //1*1*1 + 5*5*5 + 3*3*3 =153
+        //in case os 3 digit,sum os cube of each digit is equal to the number itself
+        var number=parseInt(prompt("enter no"))
+        var temp =number;
+        var sum= 0;
+        while(temp>0){
+            //eg 153/10=3
+           // console.log(temp);
+            var digit=temp%10;
+           //onsole.log(digit**3);
+            sum +=digit**3;
+           // console.log("sum"+sum);
+            temp =parseInt(temp/10);
+           // console.log(temp);
+           // console.log('________');
+        }
+        if(sum ==number){
+            console.log(`${number} is an amstrong number`);
+        }
+        else{
+            console.log(`${number} is an not amstrong number`);
+        }
+
+
+       
+        var noofdigit=number.toString().length;
+    
+        while(temp>0){   
+            var digit=temp%10;
+            sum +=digit**noofdigit;         
+            temp =parseInt(temp/10);
+        }
+        if(sum ==number){
+            console.log(`${number} is an amstrong number`);
+        }
+        else{
+            console.log(`${number} is an not amstrong number`);
+        }
+
+
+    </script>
+    
+</body>
+</html>

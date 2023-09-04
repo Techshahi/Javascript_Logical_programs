@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= prompt("enter lower no.");//1
+        var b= prompt("enter upper no.");//1000
+         for ( var i=a; i<=b; i++){//1<1000
+            var temp =i;//1
+            var noofdigit=i.toString().length;
+            var sum=0;
+            while(temp>0){//1>0 true
+                var digit=temp %10;//1%10
+                temp=parseInt(temp/10);//0
+                sum += digit ** noofdigit;
+            }
+            if(sum ==i){
+                console.log(i);
+            }
+         }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // a=math.max(val1,val2,val3);
+        // document.write(final value);
+
+        // a=Math.max(23,2312,21234);
+        // document.write(a);
+
+        var a=prompt("enter 1st no");
+        var b=prompt("enter 2nd no");
+        var c=prompt("enter 3rd no");
+        var result=check(a,b,c);
+
+        function check(p,q,r){
+            if(a>=b && a>=c){
+                console.log(a);
+                document.write(`${a}  ${b}  ${c} from three no greater is  ${a}`);
+            }
+            else if(b>=a && b>=c){
+                console.log(b);
+                document.write(`${a} ${b} ${c} from three no greater is ${b}`);
+            }
+            else{
+                console.log(c);
+                document.write(`${a} ${b} ${c} from three no greater is ${c}`);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
